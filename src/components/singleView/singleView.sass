@@ -1,0 +1,57 @@
+.container
+  display: flex
+  justify-content: center
+  margin-top: 5rem
+
+.movieView
+  width: 60vw
+  display: flex
+  @media screen and (max-width: 870px) 
+    flex-direction: column
+
+  &__details
+    padding-right: 1rem
+    .backButton
+      cursor: pointer
+    .heading
+      display: flex
+      color: #757373
+
+    .ratings
+      display: flex
+      .rating-item
+        border: 1px gray solid
+        margin-right: 1rem
+        display: flex
+        .rating-text
+          padding: .4rem
+
+        .rating-logo-rotten-tom
+          background-color: red
+          padding: .4rem
+        .rating-logo-imdb
+          background-color: yellow
+          padding: .4rem
+
+  
+  &__footer
+    display: flex
+    @media screen and (max-width: 870px) 
+      flex-direction: column
+    .footer-item
+      margin-right: 2rem
+      width: 33.3%
+      @media screen and (max-width: 870px) 
+        width: 100%
+    
+  .section-header
+    color: #353f4c
+    font-weight: bold
+
+  &__poster
+    @media screen and (max-width: 870px) 
+      margin-top: 3rem
+    .poster-image
+      border-radius: 1rem
+    
+    
